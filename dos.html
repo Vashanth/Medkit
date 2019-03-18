@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Medical Assist</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="second.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLCQh3jHgCq1sMiGeuSjYBdYfxNhwF9G-7dFJ_7n8X4XZVJNj">
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#" onclick="openNav()">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLCQh3jHgCq1sMiGeuSjYBdYfxNhwF9G-7dFJ_7n8X4XZVJNj" alt="logo" style="width:40px;">
+  </a>
+  <div class="mx-auto order-0">
+    <a class="navbar-brand mx-auto" href="#"><div style="font-family:'Times New Roman', Times, serif">MEDICAL ASSIST</div></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Account</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Signout</a>
+        </li>
+    </ul>
+</div>
+</nav>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="aboutus.html">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+
+<script>
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(255,0,0,0.3);";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "red";
+
+  
+}
+</script>
+<div class="vl"></div>
+<div class="container">
+<div class="row">
+  <h1 class="col-6" style="text-align:center">DO'S</h1>
+
+  <h1 class="col-6" style="text-align:center">DONT'S</h1>
+</div>
+<br><br><br><br>
+        <div class="container-fluid"></div>
+                <div class="row no-gutters">
+                  <div class="cols col-5 bg-success">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                  <div class="col-2"></div>
+                  <div class="cols col-5 bg-danger">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  </div>
+                </div>
+                <div class="row no-gutters">
+                        <div class="cols col-5 bg-success">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                        <div class="col-2"></div>
+                        <div class="cols col-5 bg-danger">
+                          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        </div>
+                      </div>
+
+                      <div class="row no-gutters">
+                            <div class="cols col-5 bg-success">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+                            <div class="col-2"></div>
+                            <div class="cols col-5 bg-danger">
+                              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            </div>
+                          </div>
+
+              </div>
+              
+            </div>
+
+      </div>
+
+        
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Medical Assist</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./signup.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLCQh3jHgCq1sMiGeuSjYBdYfxNhwF9G-7dFJ_7n8X4XZVJNj">
+</head>
+<style>
+html,body{
+  height: 100vw !important;
+  width: 100% !important;
+  background-image: url("logo3.jpg") !important;
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+}
+</style>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#" onclick="openNav()">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLCQh3jHgCq1sMiGeuSjYBdYfxNhwF9G-7dFJ_7n8X4XZVJNj" alt="logo" style="width:40px;">
+    </a>
+    <div class="mx-auto order-0">
+      <a class="navbar-brand mx-auto" href="#"><div style="font-family:'Times New Roman', Times, serif">MED KIT</div></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  </div>
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="signup.html">SignUp</a>
+          </li>
+      </ul>
+  </div>
+  </nav>
+  <script>
+  function update(i)
+  {
+    const x=document.querySelector('.up');
+    
+    if(i==1)
+    {
+    x.value="Male";
+    document.querySelector('.cancelbtn').style.border = "5px solid pink";
+    document.querySelector('.signupbtn').style.border = "";
+    }
+    else
+    {
+      x.value="Female";
+      document.querySelector('.signupbtn').style.border = "5px solid blue";
+      document.querySelector('.cancelbtn').style.border = "";
+    }
+  }
+
+  function drop(str)
+  {
+    const y=document.querySelector('.down');
+    y.value=str;
+    l=document.querySelector('.rep');
+    l.textContent=str
+  }
+  </script>
+
+  <form action="signup.php" method="POST" >
+        <div class="container" style="color:red">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+
+          <label for="name"><b>Name</b></label>
+          <input type="text" placeholder="Enter name:" name="name" required> 
+
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" name="email" required>
+          
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter pwd:" name="password" required> 
+
+      
+         <label for="message"><b>Address</b></label>
+         <textarea name="message" rows="2" cols="50" placeholder="Enter your address:"></textarea>
+<br>
+          <input type="hidden" class="up" name="gender"></button>
+          <input type="hidden" class="down" name="blood"></button>
+
+          <button type="button" class="cancelbtn" onclick="update(1)">Male</button>
+          <button type="button" class="signupbtn" onclick="update(2)">Female</button>
+<br><br><br><br>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger rep">Blood Group</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" onclick="drop('A+')">A+</a>
+              <a class="dropdown-item"onclick="drop('A-')">A-</a>
+              <a class="dropdown-item" onclick="drop('O+')">O+</a>
+              <a class="dropdown-item"onclick="drop('O+')">O+</a>
+              <a class="dropdown-item" onclick="drop('B+')">B+</a>
+              <a class="dropdown-item"onclick="drop('B-')">B-</a>
+              <a class="dropdown-item" onclick="drop('AB+')">AB+</a>
+              <a class="dropdown-item"onclick="drop('AB-')">AB-</a>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="container">
+            <center><button type="submit" class="submit">Sign Up</button></center>
+          </div>
+        </div>
+      </form>
+
+
+</body>
+</html>

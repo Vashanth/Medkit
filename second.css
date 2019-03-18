@@ -1,0 +1,134 @@
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+  background-image: url("https://img.freepik.com/free-photo/blurred-interior-hospital-clinical-with-people-abstract-medical-background_1484-1309.jpg?size=626&ext=jpg");
+  height: 100%; 
+  background-position: center;
+  background-size: cover;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.flex-container {
+    
+  padding: 0;
+  margin: 100px;
+  list-style: none;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-between;
+}
+flex-container.li{
+    margin: 25px;
+}
+.flex-item {
+background-color: red;
+  width: 400px;
+  height: 200px;
+  margin-top: 10px;
+  background-repeat: repeat-x;
+  transition: transform .4s;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.flex-item:hover
+{
+    transform: scale(1.3);
+}
+
+.item {
+  background-color: red;
+  height: 50px;
+  widows: 50px;
+  font-family: fantasy;
+  
+  border-radius: 20px;
+  }
+  
+  .flex-item:hover
+  {
+      transform: scale(1.3);
+  }
+  
+  
+
+.flex-items {
+  background-color: black;
+    padding: 25px;
+    width: 400px;
+    height: 200px;
+    margin-top: 10px;
+    background-repeat: repeat-x;
+    transition: transform .4s;
+    line-height: 150px;
+    color: white !important;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    
+  }
+  
+  .vl {
+    margin: 100px;
+    border-left: 6px solid black;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }
+
+.row
+{
+  padding: 10px
+}
+
+.cols{
+transition: transform  .4s;
+}
+
+.cols:hover
+{
+  transform: scale(1.3);
+}

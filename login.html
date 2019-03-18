@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Medical Assist</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="signup.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLCQh3jHgCq1sMiGeuSjYBdYfxNhwF9G-7dFJ_7n8X4XZVJNj">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#" onclick="openNav()">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLCQh3jHgCq1sMiGeuSjYBdYfxNhwF9G-7dFJ_7n8X4XZVJNj" alt="logo" style="width:40px;">
+    </a>
+    <div class="mx-auto order-0">
+      <a class="navbar-brand mx-auto" href="#"><div style="font-family:'Times New Roman', Times, serif">MED KIT</div></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  </div>
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item" active>
+              <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="signup.html">SignUp</a>
+          </li>
+      </ul>
+  </div>
+  </nav>
+ 
+
+
+  <form action="./login.php" method="post">
+    <div class="container">
+        <h1 class="write2">Login</h1>
+        <p class="write2">Enter email and password</p>
+        <hr>
+
+      <label for="email"><b class="write">E-mail</b></label>
+      <input type="email" name="emailid" placeholder="Enter e-mail:" required>
+<label for="password"><b class="write">Password:</b></label>
+      <input type="password" name="pass" placeholder="Enter password" required>
+    </div>   
+
+    <center><button type="submit" class="submit">Login</button></center>
+
+      </form>
+
+
+
+</body>
+</html>

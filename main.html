@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Medical Assist</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="second.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLCQh3jHgCq1sMiGeuSjYBdYfxNhwF9G-7dFJ_7n8X4XZVJNj">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#" onclick="openNav()">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLCQh3jHgCq1sMiGeuSjYBdYfxNhwF9G-7dFJ_7n8X4XZVJNj" alt="logo" style="width:40px;">
+    </a>
+    <div class="mx-auto order-0">
+      <a class="navbar-brand mx-auto" href="#"><div style="font-family:'Times New Roman', Times, serif">MED KIT</div></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  </div>
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="#">Account</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="login.html">Signout</a>
+          </li>
+      </ul>
+  </div>
+  </nav>
+  
+  <div class="header">
+    <img src="logo3.jpg" width="100%">
+  </div>
+
+  <div class="w3-container w3-flat-green-sea">
+    <center><h1>Med Kit</h1>
+    <p><i style="font-size:40px;">"Surf us to serve yourselves"</i></p></center>
+  </div>
+  
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <center><a href="aboutus.html"  style="font-size:50px">About</a>
+    <a href="#" style="font-size:50px">Services</a>
+    <a href="#" style="font-size:50px">Clients</a>
+    <a href="#" style="font-size:50px">Contact</a></center>
+  </div>
+  
+  
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.backgroundColor = "black";
+    document.getElementById("mySidenav").style.zIndex = 100;
+
+
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+
+    
+  }
+  </script>
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <a href="second.html"><img src="down.jpg"  width="100%" height="500"></a>
+        <div class="carousel-caption">
+          <h3>Online assistant</h3>
+          <p></p>
+        </div>   
+      </div>
+      <div class="carousel-item active">
+        <a href="second.html"><img src="zika1.jpg" alt="" width="100%" height="500"></a>
+        <div class="carousel-caption">
+          <h3>Zika</h3>
+          <p>Conatgious</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <a href="second.html"><img src="download.png" width="100%" height="500"></a>
+        <div class="carousel-caption">
+          <h3>Mobility</h3>
+          <p></p>
+        </div>   
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+
+  <marquee bgcolor="red"><bold>Nonantibiotic Treatment for Chlamydia Shows Promise&nbsp&nbsp&nbsp&nbspHPV Infection Drives Increased Rate of Vocal Cord Cancer in Young People&nbsp&nbsp&nbsp&nbspE-Cigarettes Help More Smokers Quit Than Gum and Patches, Study Finds&nbsp&nbsp&nbsp&nbspPatients and Providers Turn to Voice Technology in Healthcare</bold></marquee>
+
+ 
+
+  <div class="flex-container">
+                <a class="flex-item" data-index="1" style="width:40%;height:300px;background-image: url('dengue.jpg');background-size: 600px 300px;color:tomato">Contagious!</a>
+                <a class="flex-item" data-index="2" style="width:40%;height:300px;background-image: url('nipah.jpg');background-size: 600px 300px;color:black">Beware!</a>
+              </div>
+              <footer class="page-footer font-small blue">
+                <div class="footer-copyright text-center py-3" style="background-color:#4d4d4d;">&copy;  2019 Copyright</div>
+              </footer>
+
+
+
+              </div></html>

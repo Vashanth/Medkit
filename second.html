@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Medical Assist</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="second.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLCQh3jHgCq1sMiGeuSjYBdYfxNhwF9G-7dFJ_7n8X4XZVJNj">
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#" onclick="openNav()">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLCQh3jHgCq1sMiGeuSjYBdYfxNhwF9G-7dFJ_7n8X4XZVJNj" alt="logo" style="width:40px;">
+    </a>
+    <div class="mx-auto order-0">
+      <a class="navbar-brand mx-auto" href="#"><div style="font-family:'Times New Roman', Times, serif">MEDICAL ASSIST</div></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  </div>
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="#">Account</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Signout</a>
+          </li>
+      </ul>
+  </div>
+  </nav>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="aboutus.html">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+
+<script>
+
+
+function clicked(i)
+{
+   flex1.forEach(element => {
+   if(element.dataset.index==i)
+   {
+     if(element.className=='flex-item')
+     {
+     element.className="flex-items";
+     array.push(i);
+  let s=array.join(',');
+  document.querySelector('.head').innerHTML="You have selected symptoms:"+s;
+   }
+   else{
+     element.className='flex-item'
+     array.pop(i);
+     let s=array.join(',');
+     document.querySelector('.head').innerHTML="You have selected symptoms:"+s;
+   }
+   }
+ });
+
+
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(255,0,0,0.3);";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "red";
+
+  
+}
+</script>
+<h1 class="head"></h1>
+    <div class="container">
+              <div class="flex-container">
+                <a class="flex-item" data-index="1" onclick="clicked(1)">Symptom  1</a>
+                <a class="flex-item" data-index="2" onclick="clicked(2)">Symptom 2</a>
+                <a class="flex-item" data-index="3" onclick="clicked(3)">Symptom 3</a>
+                <a class="flex-item" data-index="4" onclick="clicked(4)">Symptom 4</a>
+                <a class="flex-item" data-index="5" onclick="clicked(5)">Symptom 5</a>
+                <a class="flex-item" data-index="6" onclick="clicked(6)">Symptom 6</a>
+              </div>
+              <a href="dos.html"><center><button class="item">SUBMIT</button></center></a>
+              <br>
+            </div>
+            <script>
+              const flex=document.querySelectorAll('.flex-item');
+              const flex1=[...flex];
+               console.log(flex1);
+              let array=[];
+              const flexmain=document.querySelector('.flex-container');
+            </script>
+        
+</body>
+</html>
